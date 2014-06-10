@@ -40,7 +40,8 @@ setup(name='psrecord',
       provides=['psrecord'],
       requires=['psutil'],
       entry_points={
-          'console_scripts': ['psrecord = psrecord:main']
+          'console_scripts': ['psrecord = psrecord:main',
+                              'psplot = psrecord.plot:main']
       },
       classifiers=[
           "Development Status :: 3 - Alpha",
